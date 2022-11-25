@@ -12,10 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Before Printing folder contents'
-        run: ls
-
       - uses: actions/checkout@v3
 
-      - name: ' After Testing Github action'
-        run: ls
+      - name: "Login to Docker hub"
+        run: docker login --username mostafazahra --password dckr_pat_qD4pkiKquCRVbMOkLreK0DkcW3Q
